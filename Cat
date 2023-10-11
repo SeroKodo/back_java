@@ -1,0 +1,46 @@
+public class Cat {
+    private String name;
+    private int age;
+    private String ownerName;
+
+    public Cat(String name, int age, String ownerName) {
+        this.name = name;
+        this.age = age;
+        this.ownerName = ownerName;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getOwnerName() {
+        return ownerName;
+    }
+
+    public void meow() {
+        System.out.println("Meow! Meow! Meow! Meow! Meow!");
+    }
+
+    public void drinkMilk() {
+        System.out.println(name + " is drinking milk.");
+    }
+
+    public void jump() {
+        System.out.println(name + " is jumping.");
+    }
+
+    public static void main(String[] args) {
+        Cat cat = new Cat("Gav", 5, "____");
+        cat.meow();
+        cat.drinkMilk();
+        cat.jump();
+
+        System.out.println("Name: " + cat.getName());
+        System.out.println("Age: " + cat.getAge());
+        System.out.println("Owner Name: " + cat.getOwnerName());
+    }
+}
